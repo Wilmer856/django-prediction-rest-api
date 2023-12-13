@@ -28,10 +28,11 @@ DEBUG = False
 ALLOWED_HOSTS = ['167.172.236.208']
 
 CORS_ALLOWED_ORIGINS = [
+    "http://safeherdsolutions.netlify.app",
+    "https://safeherdsolutions.netlify.app",
     "http://localhost:3000",
     "http://localhost:5500",
     'http://localhost',
-    'https://safeherdsolutions.netlify.app'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
