@@ -31,7 +31,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5500",
     'http://localhost',
-    'https://safeherdsolutions.netlify.app/'
+    'https://safeherdsolutions.netlify.app'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
