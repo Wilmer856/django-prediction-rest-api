@@ -25,7 +25,11 @@ SECRET_KEY = "django-insecure--_mw1__%a17f4!jzozyfr4e6^^m)*xjt0un3#ifcr#!@)3xl5z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['167.172.236.208']
+ALLOWED_HOSTS = ['167.172.236.208',
+                 'c964animalapi.xyz', 'www.c964animalapi.xyz']
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
+SECURE_SSL_REDIRECT = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://safeherdsolutions.netlify.app",
@@ -33,6 +37,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5500",
     'http://localhost',
+    'https://c964animalapi.xyz',
+    'https://www.c964animalapi.xyz'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
